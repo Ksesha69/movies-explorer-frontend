@@ -1,0 +1,94 @@
+.burgerMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+    z-index: -2;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.burgerMenu-opened {
+    opacity: 1;
+    z-index: 2;
+}
+
+.burgerMenu__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #202020;
+    width: 520px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.button__close {
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: #202020;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+.burgerMenu__main {
+    margin-top: 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerMenu__link{
+    margin-bottom: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.burgerMenu__link:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.burgerMenu__btn {
+    display: flex;
+    gap: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    bottom: 90px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .burgerMenu__container {
+        width: 100%;
+    }
+
+    .button__close {
+        top: 13px;
+        right: 13px;
+    }
+
+    .burgerMenu__btn {
+        bottom: 55px;
+    }
+}
