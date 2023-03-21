@@ -1,22 +1,20 @@
-
 function MoviesCard ({moviesTitle, moviesDuration, moviesImage}) {
-
     return (
         <li className="moviesCard">
             <div className="moviesCard__top">
                 <button 
                 type="button" 
-                className='saveMoviesCard__button'
+                className='moviesCard__delete main__link'
                 />
                 <div className="moviesCard__item">
-                    <p className="moviesCard__item_title">{moviesTitle}</p>
-                    <p className="moviesCard__item_duration">{moviesDuration}</p>
+                    <p className="moviesCard__title">{moviesTitle}</p>
+                    <p className="moviesCard__duration">{moviesDuration}</p>
                 </div>
             </div>
-            <img className="moviesCard__item_image"
-                src={moviesImage}
-                alt="постер"
-                />
+            <img className="moviesCard__image"
+            src={moviesImage}
+            alt="постер"
+            />
         </li>
     )
 }

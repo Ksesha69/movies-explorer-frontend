@@ -9,11 +9,11 @@
     padding: 14px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
 }
 
-.saveMoviesCard__button {
+.moviesCard__delete {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.moviesCard__item_title {
+.moviesCard__title {
     margin: 0;
     font-family: 'Inter';
     font-style: normal;
@@ -38,7 +38,7 @@
     color: #FFFFFF;
 }
 
-.moviesCard__item_duration {
+.moviesCard__duration {
     margin: 0;
     padding-top: 9px;
     font-family: 'Inter';
@@ -51,7 +51,7 @@
     color: #8B8B8B;
 }
 
-.moviesCard__item_image {
+.moviesCard__image {
     max-width: 100%;
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MoviesCard from "./MoviesCard/MoviesCard";
 import MoviesCardList from "./MoviesCardList/MoviesCardList";
-import SearchForm from "./SearchForm/SearchForm";
+import SearchForm from "../Movies/SearchForm/SearchForm";
 import Footer from "../Footer/Footer";
 
 import movies1 from '../../images/movies/movies1.svg';

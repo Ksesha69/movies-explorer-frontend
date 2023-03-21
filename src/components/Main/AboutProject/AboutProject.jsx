@@ -28,8 +28,8 @@ function AboutProject () {
                     <p className="aboutProject__label">Back-end</p>
                 </div>
                 <div className="aboutProject__front">
-                <p className="aboutProject__front-box">4 недели</p>
-                <p className="aboutProject__label">Front-end</p>
+                    <p className="aboutProject__front-box">4 недели</p>
+                    <p className="aboutProject__label">Front-end</p>
                 </div>
             </div>
         </section>

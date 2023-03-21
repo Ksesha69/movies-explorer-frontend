@@ -52,7 +52,7 @@
     text-decoration: none;
 }
 
-.header__auth_logo {
+.header__auth-logo {
     border-radius: 100%;
     background-color: #313131;
     width: 26px;
@@ -62,7 +62,16 @@
     justify-content: space-around;
 }
 
-.header__auth_image {
+.header__profile {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.header__auth-image {
     width: 10px;
     height: 10px;
 }

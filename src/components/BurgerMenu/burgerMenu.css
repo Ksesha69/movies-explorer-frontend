@@ -27,7 +27,7 @@
     right: 0;
 }
 
-.button__close {
+.burgerMenu__close {
     padding: 0;
     width: 22px;
     height: 22px;
@@ -83,7 +83,7 @@
         width: 100%;
     }
 
-    .button__close {
+    .burgerMenu__close {
         top: 13px;
         right: 13px;
     }

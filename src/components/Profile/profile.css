@@ -21,7 +21,7 @@
     padding-top: 106px;
 }
 
-.profile__form_container {
+.profile__container {
     width: 410px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
     border-bottom: 1px solid #424242;
 }
 
-.profile__form_container:last-child {
+.profile__container:last-child {
     border: none;
 }
 
@@ -56,7 +56,7 @@
     outline: none;
 }
 
-.profile__form_submit {
+.profile__form-submit {
     padding: 0;
     margin-top: 204px;
     width: 100%;
@@ -98,7 +98,7 @@
         padding-top: 79px;
     }
 
-    .profile__form_submit {
+    .profile__form-submit {
         padding-top: 194px;
     }
 }
@@ -112,11 +112,11 @@
         padding-top: 80px;
     }
 
-    .profile__form_container {
+    .profile__container {
         width: 260px;
     }
 
-    .profile__form_submit {
+    .profile__form-submit {
         padding-top: 268px;
     }
 }

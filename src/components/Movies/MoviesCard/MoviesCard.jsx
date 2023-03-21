@@ -5,7 +5,7 @@ function MoviesCard ({moviesTitle, moviesDuration, moviesImage}) {
     const [isSave, setIsSave] = useState(false);
 
     const SaveButtonClassName = (
-        `moviesCard__button ${isSave ? 'moviesCard__button_active' : ""}`);
+        `moviesCard__button main__link ${isSave ? 'moviesCard__button_active' : ""}`);
     
         function handleSaveClick() {
             setIsSave(true);
@@ -19,14 +19,14 @@ function MoviesCard ({moviesTitle, moviesDuration, moviesImage}) {
                 onClick={handleSaveClick}
                 />
                 <div className="moviesCard__item">
-                    <p className="moviesCard__item_title">{moviesTitle}</p>
-                    <p className="moviesCard__item_duration">{moviesDuration}</p>
+                    <p className="moviesCard__title">{moviesTitle}</p>
+                    <p className="moviesCard__duration">{moviesDuration}</p>
                 </div>
             </div>
-            <img className="moviesCard__item_image"
-                src={moviesImage}
-                alt="постер"
-                />
+            <img className="moviesCard__image"
+            src={moviesImage}
+            alt="постер"
+            />
         </li>
     )
 }

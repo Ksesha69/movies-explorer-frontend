@@ -3,30 +3,27 @@ import { Link, NavLink } from "react-router-dom";
 import closeBtn from '../../images/closeBtn.svg';
 import auth from '../../images/auth.svg'; 
 
-export default function BurgerMenu({ isOpen, onClose }) {
+function BurgerMenu({ isOpen, onClose }) {
     return (
         <div className={`burgerMenu ${isOpen && "burgerMenu-opened"}`}>
             <div className="burgerMenu__container">
-                <button className="button__close" onClick={onClose}>
-                    <img className="button__close-img" src={closeBtn} alt="закрыть" />
+                <button className="burgerMenu__close" onClick={onClose}>
+                    <img className="burgerMenu__close-img" src={closeBtn} alt="закрыть" />
                 </button>
                 <div className="burgerMenu__main">
                     <NavLink
-                        to="/"
-                            className="burgerMenu__link"
-                    >
+                    to="/"
+                    className="burgerMenu__link">
                         Главная
                     </NavLink>
                     <NavLink
-                        to="/"
-                            className="burgerMenu__link"
-                    >
+                    to="/movies"
+                    className="burgerMenu__link">
                         Фильмы
                     </NavLink>
                     <NavLink
-                        to="/"
-                            className="burgerMenu__link"
-                    >
+                    to="/saved-movies"
+                    className="burgerMenu__link">
                         Сохранённые фильмы
                     </NavLink>
                 </div>
@@ -38,3 +35,5 @@ export default function BurgerMenu({ isOpen, onClose }) {
         </div>
     );
 }
+
+export default BurgerMenu;

@@ -10,16 +10,22 @@
 
 .portfolio__site {
     border-bottom: 1px solid #424242;
+    list-style-type: none;
+}
+
+.portfolio__link {
+    width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .portfolio__site:last-child {
     border-bottom: none;
 }
 
-.portfolio__site_label {
+.portfolio__site-label {
     margin: 0;
     margin: 20px 0 19px;
     font-family: 'Inter';
@@ -28,6 +34,7 @@
     font-size: 30px;
     line-height: 50px;
     letter-spacing: -0.04em;
+    color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -39,7 +46,7 @@
         border-color: #E6E6E6;
     } 
 
-    .portfolio__site_label {
+    .portfolio__site-label {
         font-size: 28px;
     }
 }
@@ -55,7 +62,7 @@
         border-color: #E6E6E6;
     } 
 
-    .portfolio__site_label {
+    .portfolio__site-label {
         font-size: 18px;
         line-height: 28px;
     }

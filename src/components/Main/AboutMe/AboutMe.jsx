@@ -1,5 +1,6 @@
 import student from '../../../images/student.svg';
 import Portfolio from '../Portfolio/Portfolio';
+
 function AboutMe () {
     return (
         <section className="aboutMe" id="aboutMe">
@@ -8,9 +9,9 @@ function AboutMe () {
             </h2>
             <div className='aboutMe__info'>
                 <div className="aboutMe__text">
-                    <h3 className="aboutMe__text_title">Виталий</h3>
-                    <p className="aboutMe__text_subtitle">Фронтенд-разработчик, 30 лет</p>
-                    <p className="aboutMe__text_description">
+                    <h3 className="aboutMe__text-title">Виталий</h3>
+                    <p className="aboutMe__text-subtitle">Фронтенд-разработчик, 30 лет</p>
+                    <p className="aboutMe__text-description">
                         Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. 
                         Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. 
                         С 2015 года работал в компании «СКБ Контур». 

@@ -11,6 +11,7 @@
     flex-direction: row-reverse;
     align-items: baseline;
     justify-content: space-between;
+    align-items: center;
 }
 
 .moviesCard__button {
@@ -33,7 +34,7 @@
     background-image: url(../../../images/movies_sim_active.svg);
 }
 
-.moviesCard__item_title {
+.moviesCard__title {
     margin: 0;
     font-family: 'Inter';
     font-style: normal;
@@ -43,7 +44,7 @@
     color: #FFFFFF;
 }
 
-.moviesCard__item_duration {
+.moviesCard__duration {
     margin: 0;
     padding-top: 9px;
     font-family: 'Inter';
@@ -56,7 +57,7 @@
     color: #8B8B8B;
 }
 
-.moviesCard__item_image {
+.moviesCard__image {
     max-width: 100%;
 }
 
