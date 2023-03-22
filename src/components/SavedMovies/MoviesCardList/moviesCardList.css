@@ -1,0 +1,31 @@
+.moviesCardList {
+    padding: 70px 70px 30px;
+}
+.moviesCardList__container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 24px;
+}
+
+@media screen and (min-width: 786px) and (max-width: 1024px) {
+    .moviesCardList {
+        padding: 70px 30px 30px;
+    }
+
+    .moviesCardList__container {
+        gap: 36px 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+    .moviesCardList {
+        padding: 40px 10px 30px;
+    }
+
+    .moviesCardList__container {
+        gap: 16px;
+    }
+}
