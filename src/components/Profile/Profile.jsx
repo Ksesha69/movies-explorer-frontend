@@ -31,9 +31,9 @@ function Profile () {
                     required
                     />
                 </div>
-                <button type="submit" className="profile__form-submit main__link">Редактировать</button>
+                <button type="submit" className="profile__form-submit link">Редактировать</button>
             </div>
-            <button type="button" className="profile__logout main__link">Выйти из аккаунта</button>
+            <button type="button" className="profile__logout link">Выйти из аккаунта</button>
         </section>
     )
 }

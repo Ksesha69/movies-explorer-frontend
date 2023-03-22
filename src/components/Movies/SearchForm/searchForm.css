@@ -24,7 +24,7 @@
     color: #FFFFFF;
 }
 
-.searchForm__field:focus-visible {
+.searchForm__field:focus {
     outline: none;
     color: #4285F4;
 }

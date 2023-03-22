@@ -89,7 +89,7 @@
     color: #8B8B8B;
 }
 
-.login__redirection_link {
+.login__redirection-link {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -146,7 +146,7 @@
         line-height: 15px;
     }
 
-    .login__redirection_link {
+    .login__redirection-link {
         font-size: 12px;
         line-height: 15px;
     }

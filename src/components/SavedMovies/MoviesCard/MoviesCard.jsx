@@ -4,7 +4,7 @@ function MoviesCard ({moviesTitle, moviesDuration, moviesImage}) {
             <div className="moviesCard__top">
                 <button 
                 type="button" 
-                className='moviesCard__delete main__link'
+                className='moviesCard__delete link'
                 />
                 <div className="moviesCard__item">
                     <p className="moviesCard__title">{moviesTitle}</p>

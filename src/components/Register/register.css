@@ -89,7 +89,7 @@
     color: #8B8B8B;
 }
 
-.register__redirection_link {
+.register__redirection-link {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -146,7 +146,7 @@
         line-height: 15px;
     }
 
-    .register__redirection_link {
+    .register__redirection-link {
         font-size: 12px;
         line-height: 15px;
     }

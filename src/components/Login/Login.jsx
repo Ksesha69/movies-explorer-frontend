@@ -8,7 +8,7 @@ function Login () {
                 <div className="login__top">
                     <NavLink to="/">
                         <img 
-                        className="main__link"
+                        className="link"
                         alt="логотип"
                         src={logo}
                         />
@@ -31,11 +31,11 @@ function Login () {
                         className="login__form-input">
                         </input>
                         <Link to="/movies" className="login__link">
-                            <button type="button" className="login__button main__link">Войти</button>
+                            <button type="button" className="login__button link">Войти</button>
                         </Link>
                         <div className="login__redirection">
                             <p className="login__redirection-label">Ещё не зарегистрированы?</p>
-                            <Link to="/signup" className="login__redirection_link main__link">Регистрация</Link>
+                            <Link to="/signup" className="login__redirection-link link">Регистрация</Link>
                         </div>
                     </div>
                 </div>

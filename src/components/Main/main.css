@@ -11,15 +11,6 @@
     letter-spacing: -0.04em;
 }
 
-.main__link {
-    cursor: pointer;
-    transition: 0.3s linear;
-}
-
-.main__link:hover {
-    opacity: 0.4;
-}
-
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .main__header {
         font-size: 18px;

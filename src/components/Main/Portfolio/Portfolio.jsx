@@ -5,27 +5,27 @@ function Portfolio () {
             <h3 className="portfolio__header">Портфолио</h3>
             <ul className="portfolio__list">
                 <li className="portfolio__site">
-                    <a href='https://github.com/Ksesha69' className='portfolio__link main__link' target="blank">
+                    <a href='https://github.com/Ksesha69' className='portfolio__link link' target="blank">
                         <p className="portfolio__site-label">Статичный сайт</p>
                         <img 
-                        className="portfolio__site-symbol main__link"
+                        className="portfolio__site-symbol link"
                         alt="стрелка"
                         src={symbol}
                         />
                     </a>
                 </li>
                 <li className="portfolio__site">
-                    <a href='https://github.com/Ksesha69' className='portfolio__link main__link' target="blank">
+                    <a href='https://github.com/Ksesha69' className='portfolio__link link' target="blank">
                         <p className="portfolio__site-label">Адаптивный сайт</p>
                         <img 
-                        className="portfolio__site-symbol main__link"
+                        className="portfolio__site-symbol link"
                         alt="стрелка"
                         src={symbol}
                         />
                     </a>
                 </li>
                 <li className="portfolio__site">
-                    <a href='https://github.com/Ksesha69' className='portfolio__link main__link' target="blank">
+                    <a href='https://github.com/Ksesha69' className='portfolio__link link' target="blank">
                         <p className="portfolio__site-label">Одностраничное приложение</p>
                         <img 
                         className="portfolio__site-symbol"

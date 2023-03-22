@@ -8,7 +8,7 @@ function Register () {
                 <div className="register__top">
                     <NavLink to="/">
                         <img 
-                        className="main__link"
+                        className="link"
                         alt="логотип"
                         src={logo}
                         />
@@ -39,11 +39,11 @@ function Register () {
                         className="register__form-input">
                         </input>
                         <Link to="/movies" className="register__link">
-                            <button type="button" className="register__button main__link">Зарегистрироваться</button>
+                            <button type="button" className="register__button link">Зарегистрироваться</button>
                         </Link>
                         <div className="register__redirection">
                             <p className="register__redirection-label">Уже зарегистрированы?</p>
-                            <Link to="/login" className="register__redirection_link main__link">
+                            <Link to="/login" className="register__redirection-link link">
                                 Войти
                             </Link>                        
                         </div>

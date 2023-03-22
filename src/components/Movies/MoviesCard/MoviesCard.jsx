@@ -5,7 +5,7 @@ function MoviesCard ({moviesTitle, moviesDuration, moviesImage}) {
     const [isSave, setIsSave] = useState(false);
 
     const SaveButtonClassName = (
-        `moviesCard__button main__link ${isSave ? 'moviesCard__button_active' : ""}`);
+        `moviesCard__button link ${isSave ? 'moviesCard__button_active' : ""}`);
     
         function handleSaveClick() {
             setIsSave(true);

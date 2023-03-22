@@ -7,21 +7,21 @@ function Header ({ onBurgerOpen }) {
         <header className="header">
             <NavLink to="/">
                 <img 
-                    className="header__logo main__link"
+                    className="header__logo link"
                     alt="логотип"
                     src={logo}
                 />
             </NavLink>
             <button 
                 onClick={onBurgerOpen}
-                className="header__burger main__link">
+                className="header__burger link">
                     &#9776;
             </button>
             <div className="header__nav">
-                <NavLink to="/movies" className="header__linkMovies main__link">Фильмы</NavLink>
-                <NavLink to="/saved-movies" className="header__linkSave main__link">Сохраненные фильмы</NavLink>
+                <NavLink to="/movies" className="header__linkMovies link">Фильмы</NavLink>
+                <NavLink to="/saved-movies" className="header__linkSave link">Сохраненные фильмы</NavLink>
             </div>
-            <NavLink to="/Profile" className="header__auth main__link">
+            <NavLink to="/Profile" className="header__auth link">
                 <p className='header__profile'>Аккаунт</p>
                 <div className='header__auth-logo'>
                     <img 

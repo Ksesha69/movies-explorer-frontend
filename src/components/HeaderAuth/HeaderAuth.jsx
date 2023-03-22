@@ -6,16 +6,16 @@ function HeaderAuth () {
         <header className="headerAuth">
             <NavLink to="/">
                 <img 
-                className="headerAuth__logo main__link"
+                className="headerAuth__logo link"
                 alt="логотип"
                 src={logo}
             />
             </NavLink>
                 <div className='headerAuth__auth'>
-                    <NavLink to="/signup" className="headerAuth__register main__link">
+                    <NavLink to="/signup" className="headerAuth__register link">
                         <p>Регистрация</p>
                     </NavLink>
-                    <NavLink to="/login" className="headerAuth__login main__link">
+                    <NavLink to="/login" className="headerAuth__login link">
                         <p>Войти</p>
                     </NavLink>
                 </div>

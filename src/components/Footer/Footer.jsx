@@ -6,10 +6,10 @@ function Footer () {
                 <p className="footer__date">&copy;2023</p>
                 <ul className="footer__list">
                     <a href="https://practicum.yandex.ru/" target='blank'>
-                        <li className="footer__link main__link">Яндекс.Практикум</li>
+                        <li className="footer__link link">Яндекс.Практикум</li>
                     </a>
                     <a href="https://github.com/Ksesha69" target='blank'>
-                        <li className="footer__link main__link">Github</li>
+                        <li className="footer__link link">Github</li>
                     </a>
                 </ul>
             </div>

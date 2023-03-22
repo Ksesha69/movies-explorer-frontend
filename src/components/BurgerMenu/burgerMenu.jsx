@@ -27,7 +27,7 @@ function BurgerMenu({ isOpen, onClose }) {
                         Сохранённые фильмы
                     </NavLink>
                 </div>
-                <Link to="/profile" className="burgerMenu__btn main__link">
+                <Link to="/profile" className="burgerMenu__btn link">
                     <p>Аккаунт</p>
                     <img className="burgerMenu__profile-btn" src={auth} alt="кнопка" />
                 </Link>
