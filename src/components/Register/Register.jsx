@@ -1,7 +1,20 @@
 import { NavLink, Link } from "react-router-dom";
+import useFormWithValidation from "../useForm/useForm";
 import logo from '../../images/logo.svg'
 
-function Register () {
+function Register ({ onSubmit }) {
+
+    const { values, handleChange, errors, isValid } = useFormWithValidation();
+
+    const buttonSubmit = (
+        `link register__button ${!isValid && 'register__button_disabled'}`);
+
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        const { name, email, password } = values;
+        onSubmit({name, email, password});
+    };
+
     return (
         <section className="register">
             <div className="register__container">
@@ -15,32 +28,52 @@ function Register () {
                     </NavLink>
                     <h2 className="register__header">Добро пожаловать!</h2>
                 </div>
-                <div className="register__form">
-                    <div className="register__form-name">
+                <form onSubmit={handleSubmit} className="register__form">
+                    <div className="register__field">
                         <p className="register__form-label">Имя</p>
                         <input 
+                        required
                         type="text" 
+                        id="register-input-name"
                         className="register__form-input"
-                        defaultValue="Виталий">
+                        name="name"
+                        placeholder="Имя"
+                        value={values.name || ''}
+                        onChange={handleChange}>
                         </input>
+                        <span id="register-input-name-error" className="register__input-error">{errors.name}</span>
                     </div>
-                    <div className="register__form-email">
+                    <div className="register__field">
                         <p className="register__form-label">E-mail</p>
                         <input 
-                        type="email" 
+                        required
+                        type="email"
+                        id="register-input-email" 
                         className="register__form-input"
-                        defaultValue="pochta@yandex.ru">
+                        name="email"
+                        placeholder="Email"
+                        autoComplete="off"
+                        value={values.email || ''}
+                        onChange={handleChange}
+                        >
                         </input>
+                        <span id="register-input-email-error" className="register__input-error">{errors.email}</span>
                     </div>
-                    <div className="register__form-pass">
+                    <div className="register__field">
                         <p className="register__form-label">Пароль</p>
                         <input 
+                        required
                         type="password" 
-                        className="register__form-input">
+                        id="register-input-pass"
+                        className="register__form-input"
+                        name="password"
+                        placeholder="Пароль"
+                        value={values.password || ''}
+                        onChange={handleChange}
+                        >
                         </input>
-                        <Link to="/movies" className="register__link">
-                            <button type="button" className="register__button link">Зарегистрироваться</button>
-                        </Link>
+                        <span id="register-input-pass-error" className="register__input-error">{errors.password}</span>
+                            <button type="submit" className={buttonSubmit}>Зарегистрироваться</button>
                         <div className="register__redirection">
                             <p className="register__redirection-label">Уже зарегистрированы?</p>
                             <Link to="/login" className="register__redirection-link link">
@@ -48,7 +81,7 @@ function Register () {
                             </Link>                        
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     )

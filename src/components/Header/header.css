@@ -76,6 +76,51 @@
     height: 10px;
 }
 
+.headerAuth {
+    padding: 18px 70px 18px;
+    background: #073042;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerAuth__auth {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.headerAuth__register {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.headerAuth__login {
+    width: 76px;
+    height: 32px;
+    background: #3DDC84;
+    border-radius: 3px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .header {
         padding: 18px 30px;
@@ -90,6 +135,14 @@
 
     .header__burger {
         display: flex;
+    }
+
+    .headerAuth {
+        padding: 18px 30px;
+    }
+
+    .headerAuth__auth {
+        gap: 30px;
     }
 }
 
@@ -110,5 +163,13 @@
     .header__burger {
         display: flex;
         font-size: 30px;
+    }
+
+    .headerAuth {
+        padding: 18px 14px;
+    }
+
+    .headerAuth__auth {
+        gap: 14px;
     }
 }

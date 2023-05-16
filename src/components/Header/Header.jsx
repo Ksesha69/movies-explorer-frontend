@@ -2,8 +2,29 @@ import logo from '../../images/logo.svg';
 import auth from '../../images/auth.svg'; 
 import { NavLink } from "react-router-dom";
 
-function Header ({ onBurgerOpen }) {
-    return (
+function Header ({ loggedIn, onBurgerOpen }) {
+    if (window.location.pathname === "/login") return null;
+    if (window.location.pathname === "/signup") return null;
+    return !loggedIn ? (
+        <header className="headerAuth">
+            <NavLink to="/">
+                <img 
+                className="headerAuth__logo link"
+                alt="логотип"
+                src={logo}
+            />
+            </NavLink>
+                <div className='headerAuth__auth'>
+                    <NavLink to="/signup" className="headerAuth__register link">
+                        <p>Регистрация</p>
+                    </NavLink>
+                    <NavLink to="/login" className="headerAuth__login link">
+                        <p>Войти</p>
+                    </NavLink>
+                </div>
+        </header>
+    )
+    : (
         <header className="header">
             <NavLink to="/">
                 <img 

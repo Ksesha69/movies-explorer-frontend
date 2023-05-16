@@ -9,9 +9,8 @@
     padding: 14px;
     display: flex;
     flex-direction: row-reverse;
-    align-items: baseline;
+    align-items: stretch;
     justify-content: space-between;
-    align-items: center;
 }
 
 .moviesCard__button {
@@ -23,7 +22,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../images/movies_sim.svg);
+    background-image: url(../../images/movies_sim.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.moviesCard__delete {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #313131;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/save-movies_sim.svg);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -31,7 +45,7 @@
 
 .moviesCard__button_active {
     background-color: #3DDC84;
-    background-image: url(../../../images/movies_sim_active.svg);
+    background-image: url(../../images/movies_sim_active.svg);
 }
 
 .moviesCard__title {
@@ -59,6 +73,7 @@
 
 .moviesCard__image {
     max-width: 100%;
+    height: 201px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
