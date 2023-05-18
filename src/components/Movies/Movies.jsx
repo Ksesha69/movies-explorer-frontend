@@ -7,7 +7,7 @@ import More from "./More/More";
 import Footer from "../Footer/Footer";
 import { useEffect } from 'react';
 
-function Movies ({movies, onSaveMovie, onDeleteMovie}) {
+function Movies ({movies, userMovies, onSaveMovie, onDeleteMovie}) {
 
     const [checked, setChecked] = useState(true);
     const [shortMovies, setShortMovies] = useState([]);
@@ -23,20 +23,21 @@ function Movies ({movies, onSaveMovie, onDeleteMovie}) {
     }, [checked, movies, setShortMovies]);
 
     function handleToogleCheck() {
-        setChecked(checked);
+        setChecked(!checked);
     }
 
     return (
         <section className="movies">
             <SearchForm
             handleToogleCheck={handleToogleCheck}
-            checked={shortMovies}
+            checked={checked ? shortMovies : movies}
             />
             <MoviesCardList>
             {
                 movies?.map((movie) => (
                     <MoviesCard
                     movie={movie}
+                    userMovies={userMovies}
                     key={movie.id}
                     onSaveMovie={onSaveMovie} 
                     onDeleteMovie={onDeleteMovie}                   

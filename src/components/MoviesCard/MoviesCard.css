@@ -17,12 +17,10 @@
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    background: #313131;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../images/movies_sim.svg);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -46,6 +44,11 @@
 .moviesCard__button_active {
     background-color: #3DDC84;
     background-image: url(../../images/movies_sim_active.svg);
+}
+
+.moviesCard__button_noactive {
+    background-image: url(../../images/movies_sim.svg);
+    background-color: #313131;
 }
 
 .moviesCard__title {

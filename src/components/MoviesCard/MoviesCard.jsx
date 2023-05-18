@@ -3,7 +3,7 @@ function MoviesCard ({ movie, userMovies, onSaveMovie, onDeleteMovie }) {
     const savedMovie = userMovies?.find((i) => i.movieId === movie.id);
 
     const SaveButtonClassName = (
-        `link moviesCard__button ${savedMovie && 'moviesCard__button_active'}`);
+        `link moviesCard__button ${savedMovie ? 'moviesCard__button_active' : 'moviesCard__button_noactive'}`);
     
         function saveClick() {
             if(savedMovie) {
@@ -21,7 +21,7 @@ function MoviesCard ({ movie, userMovies, onSaveMovie, onDeleteMovie }) {
     return (
         <li className="moviesCard">
             <div className="moviesCard__top">
-            {!userMovies ?
+            {userMovies ?
                 <button 
                 type="button" 
                 className={SaveButtonClassName}
@@ -39,15 +39,17 @@ function MoviesCard ({ movie, userMovies, onSaveMovie, onDeleteMovie }) {
                 </div>
             </div>
             <a href={movie.trailerLink} target="_blank" rel="noreferrer">
-                {!userMovies ?
+                {userMovies ?
                 <img className="moviesCard__image"
                 src={`https://api.nomoreparties.co/${movie.image.url}`}
                 alt={movie.nameRU}
-                /> :
+                />
+                :
                 <img className="moviesCard__image"
-                src={`https://api.nomoreparties.co/${movie.image.url}`}
+                src={movie.image}
                 alt={movie.nameRU}
-                />}
+                />
+                }
             </a>
         </li>
     )

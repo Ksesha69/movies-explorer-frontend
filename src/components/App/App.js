@@ -99,7 +99,6 @@ function App() {
   }
 
   function handleMovieDelete(movie) {
-    console.dir(movie._id)
     mainApi.deleteMovie(movie._id, token)
     .then(() => userMovies.filter((f) => f._id !== movie._id))
     .catch(err => {

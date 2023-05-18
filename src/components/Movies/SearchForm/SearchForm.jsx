@@ -1,4 +1,4 @@
-function SearchForm ({handleToogleCheck, checked}) {
+function SearchForm ({checked, handleToogleCheck}) {
 
     return (
         <section className="searchForm"> 
@@ -7,7 +7,7 @@ function SearchForm ({handleToogleCheck, checked}) {
                 <button type="submit" className="searchForm__button link"></button>
             </form>    
             <div className="searchForm__full-length">
-                <button type="checkbox" checked={checked} onChange={handleToogleCheck} className="searchForm__switch link"></button>
+                <button type="checkbox" checked={checked} onClick={handleToogleCheck} className="searchForm__switch link"></button>
                 <p className="searchForm__full-length-label">Короткометражки</p>
             </div>
         </section>

@@ -12,9 +12,9 @@ function SavedMovies ({userMovies, onDeleteMovie}) {
             userMovies?.map((userMovie) => (
             <MoviesCard 
             movie={userMovie}
-            userMovie={userMovie}
+            savedMovie={userMovie}
             onDeleteMovie={onDeleteMovie}
-            key={userMovie.id}
+            key={userMovie._id}
             />
             ))}
             </MoviesCardList>
