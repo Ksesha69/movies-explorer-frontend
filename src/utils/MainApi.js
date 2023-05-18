@@ -1,4 +1,4 @@
-export const url = 'http://localhost:3001';
+export const url = 'api.domainname.movies.nomoredomains.work';
 
 class MainApi {
     constructor(setting) {
